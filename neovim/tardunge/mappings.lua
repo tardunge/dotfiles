@@ -3,7 +3,7 @@
 -------------------------------------------------
 
 local function map(m, k, v)
-	vim.keymap.set(m, k, v, { silent = true })
+    vim.keymap.set(m, k, v, { silent = true })
 end
 
 map("n", "<leader>m", "<CMD>NvimTreeToggle<CR>")
@@ -39,8 +39,8 @@ map("v", "<leader>,", '<esc><cmd>lua require("fzf-lua").files()<CR>')
 map("n", "<leader>h", '<cmd>lua require("fzf-lua").oldfiles()<CR>')
 map("n", "<leader>b", '<cmd>lua require("fzf-lua").buffers()<CR>')
 map("n", "<leader>r", '<cmd>lua require("fzf-lua").grep()<CR>')
-map("n", "<leader>rc", '<cmd>lua require("fzf-lua").grep_cword()<CR>') -- search for word under cursor
-map("n", "<leader>rC", '<cmd>lua require("fzf-lua").grep_cWORD()<CR>') -- search for word under cursor
+map("n", "<leader>rc", '<cmd>lua require("fzf-lua").grep_cword()<CR>')  -- search for word under cursor
+map("n", "<leader>rC", '<cmd>lua require("fzf-lua").grep_cWORD()<CR>')  -- search for word under cursor
 map("n", "<leader>rb", '<cmd>lua require("fzf-lua").grep_curbuf()<CR>') -- search in current buffer
 -- Command needs to be implemented
 --map('n', '<leader>w', '<cmd>lua require("fzf-lua").wipeouts()<CR>')

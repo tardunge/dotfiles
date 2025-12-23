@@ -183,6 +183,8 @@ if utils.executable("rust-analyzer") then
                 },
                 checkOnSave = {
                     command = "clippy", -- Run Clippy on save
+                    allFeatures = true,
+                    extraArgs = "-all-features",
                 },
             },
         },

@@ -1,7 +1,7 @@
 local F = {}
 
 function F.toggle_window_zoom()
-  vim.cmd [[
+    vim.cmd [[
 
     if g:win_zoom
       let g:win_zoom = 0

@@ -90,3 +90,11 @@ use_asdf() {
     export PATH="$HOME/.asdf/shims:$PATH"
     echo "Switched to asdf Rust"
 }
+
+# Added by Windsurf
+export PATH="/Users/tardunge/.codeium/windsurf/bin:$PATH"
+
+# Add Nix to PATH
+export PATH="/nix/var/nix/profiles/default/bin:$PATH"
+
+. "$HOME/.local/bin/env"
